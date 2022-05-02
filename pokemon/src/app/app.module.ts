@@ -6,7 +6,8 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 
 import {StoreModule} from '@ngrx/store';
-import {pokemonCardsReducer} from './state/pokemon-cards/pokemon-cards.reducer';
+import {PokemonCardsReducer} from './state/pokemon-cards/pokemon-cards.reducer';
+
 import {CardListComponent} from './card-list/card-list.component';
 import {CardComponent} from './card-list/card/card.component';
 
@@ -19,7 +20,7 @@ import {CardComponent} from './card-list/card/card.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({cards: pokemonCardsReducer}),
+    StoreModule.forRoot({cards: PokemonCardsReducer}),
     HttpClientModule
   ],
   providers: [],

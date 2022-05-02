@@ -5,7 +5,7 @@ import {PokemonCardInterface} from '../../interfaces/pokemon-card.interface';
 
 export const initialState: ReadonlyArray<PokemonCardInterface> = []
 
-export const pokemonCardsReducer = createReducer(
+export const PokemonCardsReducer = createReducer(
   initialState,
   on(getPokemonInfo, (state, {cardsArr}) => cardsArr)
 );

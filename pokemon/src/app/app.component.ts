@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
-import {PokemonCardsService} from "./services/pokemon-cards.service";
+
+import {PokemonCardsService} from './services/pokemon-cards.service';
 
 @Component({
   selector: 'app-root',
